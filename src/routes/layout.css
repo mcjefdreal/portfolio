@@ -1,3 +1,40 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+@font-face {
+    font-family: 'Plein';
+    src: url('/fonts/Plein-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Plein';
+    src: url('/fonts/Plein-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Plein';
+    src: url('/fonts/Plein-Italic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@theme {
+    /* Custom fonts here */
+    --font-plein: 'Plein', system-ui, sans-serif;
+
+
+    /* Custom colors here */
+    --color-c-black: #061F2F
+    --color-c-gray: #9AADBF
+    --color-c-light-blue: #6D98BA
+    --color-c-light-pink: #CB8589
+    --color-c-brown: #796465
+}
