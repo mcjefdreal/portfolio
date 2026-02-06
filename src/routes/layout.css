@@ -32,9 +32,10 @@
 
 
     /* Custom colors here */
-    --color-c-black: #061F2F
-    --color-c-gray: #9AADBF
-    --color-c-light-blue: #6D98BA
-    --color-c-light-pink: #CB8589
-    --color-c-brown: #796465
+    --color-c-black: #061F2F;
+    --color-c-gray: #9AADBF;
+    --color-c-light-blue: #6D98BA;
+    --color-c-light-pink: #CB8589;
+    --color-c-brown: #796465;
+    --color-c-white: #F0EDEE;
 }
