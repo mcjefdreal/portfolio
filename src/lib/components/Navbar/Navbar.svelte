@@ -9,10 +9,10 @@
 			<a class="flex h-full items-center px-5" href={resolve('/')}>About</a>
 		</li>
 		<li>
-			<a class="flex h-full items-center px-5" href={resolve('/')}>About</a>
+			<a class="flex h-full items-center px-5" href={resolve('/')}>Home</a>
 		</li>
 		<li>
-			<a class="flex h-full items-center px-5" href={resolve('/')}>About</a>
+			<a class="flex h-full items-center px-5" href={resolve('/')}>Projects</a>
 		</li>
 	</ul>
 </nav>
