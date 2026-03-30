@@ -1,0 +1,9 @@
+services:
+  sveltekit-app:
+    build: .
+    container_name: portfolio
+    restart: unless-stopped
+    ports:
+      - 127.0.0.1:3000:3000
+    environment:
+      - NODE_ENV=production
