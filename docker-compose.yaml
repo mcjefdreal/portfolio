@@ -11,3 +11,7 @@ services:
       - ORIGIN=https://mcjefd.dev 
       - PROTOCOL_HEADER=x-forwarded-proto
       - HOST_HEADER=x-forwarded-host
+
+networks:
+  caddy_net:
+    external: true
