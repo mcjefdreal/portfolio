@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { resolve } from '$app/paths';
 	import type { Component } from 'svelte';
 
 	interface SocialLink {
@@ -26,9 +27,9 @@
 
 		{#if socialLinks.length > 0}
 			<div class="flex items-center gap-4">
-				{#each socialLinks as link}
+				{#each socialLinks as link (link.label)}
 					<a
-						href={link.href}
+						href={link.href.startsWith('/') ? resolve(link.href) : link.href}
 						aria-label={link.label}
 						target="_blank"
 						rel="noopener noreferrer"
