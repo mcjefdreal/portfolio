@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { cn } from '$lib/utils';
-	import { ExternalLink } from 'lucide-svelte';
+	import { ExternalLink } from '@lucide/svelte';
 	import type { Project } from './types';
 
 	let {
@@ -41,7 +41,7 @@
 		<div class="mt-auto flex items-center gap-4 pt-6">
 			{#each project.links as link}
 				<a
-					{href}
+					href={link.href}
 					target="_blank"
 					rel="noopener noreferrer"
 					class="inline-flex items-center gap-1.5 text-sm font-medium text-c-white/50 transition-colors hover:text-c-light-blue"

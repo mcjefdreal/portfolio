@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { UserRound } from 'lucide-svelte';
+	import { UserRound } from '@lucide/svelte';
 
 	const skills = [
 		'TypeScript',

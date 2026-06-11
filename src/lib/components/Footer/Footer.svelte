@@ -28,7 +28,7 @@
 			<div class="flex items-center gap-4">
 				{#each socialLinks as link}
 					<a
-						{href}
+						href={link.href}
 						aria-label={link.label}
 						target="_blank"
 						rel="noopener noreferrer"
