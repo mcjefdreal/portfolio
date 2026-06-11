@@ -68,7 +68,7 @@
 	<section class="mt-16">
 		<h2 class="text-xl font-semibold text-c-white">Skills</h2>
 		<div class="mt-4 flex flex-wrap gap-2">
-			{#each skills as skill}
+			{#each skills as skill (skill)}
 				<span
 					class="rounded-full bg-c-light-blue/10 px-4 py-1.5 text-sm font-medium text-c-light-blue"
 				>
@@ -82,7 +82,7 @@
 	<section class="mt-16">
 		<h2 class="text-xl font-semibold text-c-white">Experience</h2>
 		<div class="mt-4 space-y-6">
-			{#each experiences as exp}
+			{#each experiences as exp (`${exp.role}|${exp.company}`)}
 				<div class="rounded-lg border border-white/10 bg-white/[0.02] p-5">
 					<div class="flex items-start justify-between gap-4">
 						<div>
