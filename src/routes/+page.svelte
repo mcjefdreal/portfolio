@@ -20,15 +20,15 @@
 
 		<div class="mt-6 text-lg text-c-white/70 sm:text-xl">
 			<TypingAnimation
-				words={['Full-stack developer', 'UI/UX enthusiast', 'Open source contributor']}
+				words={['Full-stack developer', 'Programmer', 'Avid learner']}
 				loop
 				pauseDelay={2000}
 			/>
 		</div>
 
-		<p class="mx-auto mt-6 max-w-xl text-sm leading-relaxed text-c-white/50 sm:text-base">
-			I build clean, functional digital experiences with modern web technologies.
-		</p>
+		<!-- <p class="mx-auto mt-6 max-w-xl text-sm leading-relaxed text-c-white/50 sm:text-base">
+			I build clean, functional websites with modern web technologies.
+		</p> -->
 
 		<div class="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
 			<a
