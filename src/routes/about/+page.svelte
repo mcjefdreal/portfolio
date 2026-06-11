@@ -52,7 +52,13 @@
 			</h1>
 
 			<p class="mt-6 leading-relaxed text-c-white/70">
-				I'm a passionate full-stack developer who enjoys building things.
+				I'm a passionate full-stack web and software developer who enjoys building things. Always
+				looking to improve and learn more about the latest technologies and best practices.
+			</p>
+
+			<p class="mt-6 leading-relaxed text-c-white/70">
+				Currently a fourth-year BS Computer Science student at University of the Philippines -
+				Diliman.
 			</p>
 		</div>
 
