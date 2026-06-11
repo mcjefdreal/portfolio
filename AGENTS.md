@@ -17,17 +17,17 @@ Owner: Michael Real. Author identifier on home page: "Michael Real" / `mcjefd.de
 
 Run from the repo root.
 
-| Task | Command |
-|---|---|
-| Install | `pnpm install` |
-| Dev server | `pnpm dev` |
-| Type/svelte check | `pnpm lint:svelte` (= `svelte-check`) |
-| Lint JS/TS/Svelte | `pnpm lint:eslint` |
-| All lint (parallel) | `pnpm lint` |
-| Format check | `pnpm fmt` |
-| Format fix | `pnpm fmt:fix` |
-| Production build | `pnpm build` (= `vite build`) |
-| Preview build | `pnpm preview` |
+| Task                | Command                               |
+| ------------------- | ------------------------------------- |
+| Install             | `pnpm install`                        |
+| Dev server          | `pnpm dev`                            |
+| Type/svelte check   | `pnpm lint:svelte` (= `svelte-check`) |
+| Lint JS/TS/Svelte   | `pnpm lint:eslint`                    |
+| All lint (parallel) | `pnpm lint`                           |
+| Format check        | `pnpm fmt`                            |
+| Format fix          | `pnpm fmt:fix`                        |
+| Production build    | `pnpm build` (= `vite build`)         |
+| Preview build       | `pnpm preview`                        |
 
 `svelte-kit sync` is wired to `pnpm prepare` and runs automatically on install.
 Run it manually if `tsconfig.json` complains about missing generated files.
