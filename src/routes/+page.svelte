@@ -7,17 +7,19 @@
 	<title>Home — Portfolio</title>
 </svelte:head>
 
-<section class="relative flex min-h-[calc(100vh-4rem)] w-full items-center justify-center overflow-hidden">
+<section
+	class="relative flex min-h-[calc(100vh-4rem)] w-full items-center justify-center overflow-hidden"
+>
 	<HeroBackground />
 
-	<div class="relative z-10 mx-auto max-w-3xl px-6 text-center hero-content">
+	<div class="hero-content relative z-10 mx-auto max-w-3xl px-6 text-center">
 		<h1 class="text-4xl font-bold tracking-tight text-c-white sm:text-5xl lg:text-6xl">
-			Hi, I'm <span class="text-c-light-blue">Your Name</span>
+			Hi, I'm <span class="text-c-light-blue">Michael Real</span>
 		</h1>
 
 		<div class="mt-6 text-lg text-c-white/70 sm:text-xl">
 			<TypingAnimation
-				words={["Full-stack developer", "UI/UX enthusiast", "Open source contributor"]}
+				words={['Full-stack developer', 'UI/UX enthusiast', 'Open source contributor']}
 				loop
 				pauseDelay={2000}
 			/>
