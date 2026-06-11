@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { resolve } from '$app/paths';
 	import { HeroBackground } from '$lib/components/HeroBackground';
 	import { TypingAnimation } from '$lib/components/magic/typing-animation';
 </script>
@@ -31,13 +32,13 @@
 
 		<div class="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
 			<a
-				href="/projects"
+				href={resolve('/projects')}
 				class="inline-flex h-11 items-center rounded-lg bg-c-light-blue px-8 text-sm font-medium text-c-black transition-all hover:bg-c-light-blue/90"
 			>
 				View Projects
 			</a>
 			<a
-				href="/about"
+				href={resolve('/about')}
 				class="inline-flex h-11 items-center rounded-lg border border-white/20 px-8 text-sm font-medium text-c-white/80 transition-all hover:border-c-white/40 hover:text-c-white"
 			>
 				About Me
