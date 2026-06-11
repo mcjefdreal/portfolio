@@ -2,14 +2,22 @@
 	import { UserRound } from '@lucide/svelte';
 
 	const skills = [
-		'TypeScript',
 		'Svelte',
-		'React',
-		'Node.js',
+		'SvelteKit',
+		'Python',
+		'TypeScript',
+		'JavaScript',
+		'HTML',
+		'CSS',
+		'Flutter',
+		'C',
 		'Tailwind CSS',
 		'Docker',
+		'MySQL',
 		'PostgreSQL',
-		'Git'
+		'Node.js',
+		'Git',
+		'GitHub'
 	];
 
 	const experiences = [
@@ -17,8 +25,7 @@
 			role: 'Software Engineer',
 			company: 'Company Name',
 			period: '2024 — Present',
-			description:
-				'Built and maintained modern web applications using SvelteKit and TypeScript.'
+			description: 'Built and maintained modern web applications using SvelteKit and TypeScript.'
 		},
 		{
 			role: 'Junior Developer',
@@ -44,13 +51,7 @@
 			</h1>
 
 			<p class="mt-6 leading-relaxed text-c-white/70">
-				I'm a passionate developer who enjoys building things for the web. I focus on
-				creating clean, accessible, and performant applications that solve real problems.
-			</p>
-
-			<p class="mt-4 leading-relaxed text-c-white/60">
-				With experience across the full stack, I bring ideas to life from concept to
-				deployment. I'm constantly learning and exploring new tools to improve my craft.
+				I'm a passionate full-stack developer who enjoys building things.
 			</p>
 		</div>
 
