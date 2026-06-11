@@ -9,5 +9,6 @@ export interface Project {
 	tech: string[];
 	links?: ProjectLink[];
 	image?: string;
+	imageAlt?: string;
 	featured?: boolean;
 }
