@@ -7,7 +7,7 @@
 			title: "Puso't Pinggan",
 			description:
 				'Food marketplace Progressive Web App (PWA) built for CS 191 and 192 (Software Engineering 1 and 2).',
-			tech: ['Svelte', 'TypeScript', 'PostgreSQL', 'Tailwind CSS'],
+			tech: ['Svelte', 'Tailwind CSS', 'PostgreSQL', 'TypeScript', 'JavaScript'],
 			links: [{ label: 'GitHub', href: 'https://github.com/mcjefdreal/PusotPinggan' }],
 			image: '/projects/pusotpinggan.jpg',
 			imageAlt: "Screenshot of Puso't Pinggan Login Screen",
@@ -26,14 +26,16 @@
 			imageAlt: 'Screenshot of michAIR jURBAN Home Page'
 		},
 		{
-			title: 'Project Gamma',
+			title: 'DRAP: Draft Ranking Automated Processor',
 			description:
-				'A design system component library with comprehensive documentation, accessibility built-in, and themeable components.',
-			tech: ['React', 'Storybook', 'CSS Modules', 'Vitest'],
+				"DRAP is the open-source Draft Ranking Automated Processor for the University of the Philippines Diliman, Department of Computer Science's annual draft of research lab assignments",
+			tech: ['Svelte', 'Tailwind CSS', 'PostgreSQL', 'TypeScript', 'JavaScript', 'OAuth'],
 			links: [
-				{ label: 'GitHub', href: 'https://github.com/mcjefdreal/michair-jurban/' },
-				{ label: 'Website', href: 'https://mcjefdreal.github.io/michair-jurban/' }
-			]
+				{ label: 'GitHub', href: 'https://github.com/BastiDood/drap/' },
+				{ label: 'Website', href: 'https://drap.dcs.upd.edu.ph/' }
+			],
+			image: '/projects/drap.png',
+			imageAlt: 'Screenshot of DRAP Home Page'
 		}
 	];
 </script>
