@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { resolve } from '$app/paths';
 	import { cn } from '$lib/utils';
 	import { ExternalLink } from '@lucide/svelte';
 	import type { Project } from './types';
@@ -56,7 +57,7 @@
 
 		{#if project.tech.length > 0}
 			<div class="mt-4 flex flex-wrap gap-2">
-				{#each project.tech as tech}
+				{#each project.tech as tech (tech)}
 					<span class="rounded-full bg-c-light-blue/10 px-3 py-1 text-xs font-medium text-c-light-blue">
 						{tech}
 					</span>
@@ -66,9 +67,9 @@
 
 		{#if project.links && project.links.length > 0}
 			<div class="mt-auto flex items-center gap-4 pt-6">
-				{#each project.links as link}
+				{#each project.links as link (link.label)}
 					<a
-						href={link.href}
+						href={link.href.startsWith('/') ? resolve(link.href) : link.href}
 						target="_blank"
 						rel="noopener noreferrer"
 						class="inline-flex items-center gap-1.5 text-sm font-medium text-c-white/50 transition-colors hover:text-c-light-blue"
