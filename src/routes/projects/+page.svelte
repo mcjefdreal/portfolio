@@ -14,18 +14,6 @@
 			featured: true
 		},
 		{
-			title: 'michAIR jURBAN',
-			description:
-				'Built as the project for CS 132 (Introduction to Data Science). We investigated the correlation between Air Quality Index (AQI) and GDP of various cities in the Philippines.',
-			tech: ['Svelte'],
-			links: [
-				{ label: 'GitHub', href: 'https://github.com/mcjefdreal/michair-jurban/' },
-				{ label: 'Website', href: 'https://mcjefdreal.github.io/michair-jurban/' }
-			],
-			image: '/projects/michairjurban.png',
-			imageAlt: 'Screenshot of michAIR jURBAN Home Page'
-		},
-		{
 			title: 'DRAP: Draft Ranking Automated Processor',
 			description:
 				"DRAP is the open-source Draft Ranking Automated Processor for the University of the Philippines Diliman, Department of Computer Science's annual draft of research lab assignments",
@@ -36,6 +24,18 @@
 			],
 			image: '/projects/drap.png',
 			imageAlt: 'Screenshot of DRAP Home Page'
+		},
+		{
+			title: 'michAIR jURBAN',
+			description:
+				'Built as the project for CS 132 (Introduction to Data Science). We investigated the correlation between Air Quality Index (AQI) and GDP of various cities in the Philippines.',
+			tech: ['Svelte'],
+			links: [
+				{ label: 'GitHub', href: 'https://github.com/mcjefdreal/michair-jurban/' },
+				{ label: 'Website', href: 'https://mcjefdreal.github.io/michair-jurban/' }
+			],
+			image: '/projects/michairjurban.png',
+			imageAlt: 'Screenshot of michAIR jURBAN Home Page'
 		}
 	];
 </script>
