@@ -40,7 +40,7 @@ export default defineConfig(
     // These components render links from dynamic data that may be external
     // (GitHub repos, live demos, social profiles) — resolve() is not applicable.
     files: [
-      "src/lib/components/Footer/**/*.svelte",
+      "src/lib/components/SocialIcons/**/*.svelte",
       "src/lib/components/ProjectCard/**/*.svelte",
     ],
     rules: {
