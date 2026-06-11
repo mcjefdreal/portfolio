@@ -1,0 +1,59 @@
+<script lang="ts">
+	import { ProjectCard } from '$lib/components/ProjectCard';
+	import type { Project } from '$lib/components/ProjectCard';
+
+	const projects: Project[] = [
+		{
+			title: 'Project Alpha',
+			description:
+				'A full-stack web application built with SvelteKit and PostgreSQL. Features real-time collaboration and a modern responsive UI.',
+			tech: ['Svelte', 'TypeScript', 'PostgreSQL', 'Tailwind CSS'],
+			links: [
+				{ label: 'GitHub', href: '#' },
+				{ label: 'Live Demo', href: '#' }
+			],
+			featured: true
+		},
+		{
+			title: 'Project Beta',
+			description:
+				'An open-source CLI tool for scaffolding modern web projects with zero configuration. Designed for developer productivity.',
+			tech: ['Node.js', 'TypeScript', 'Commander'],
+			links: [{ label: 'GitHub', href: '#' }]
+		},
+		{
+			title: 'Project Gamma',
+			description:
+				'A design system component library with comprehensive documentation, accessibility built-in, and themeable components.',
+			tech: ['React', 'Storybook', 'CSS Modules', 'Vitest'],
+			links: [
+				{ label: 'GitHub', href: '#' },
+				{ label: 'Docs', href: '#' }
+			]
+		}
+	];
+</script>
+
+<svelte:head>
+	<title>Projects — Portfolio</title>
+</svelte:head>
+
+<div class="mx-auto w-full max-w-5xl px-6 py-10 sm:py-16">
+	<!-- Header -->
+	<div class="max-w-2xl">
+		<h1 class="text-3xl font-bold tracking-tight text-c-white sm:text-4xl">
+			<span class="text-c-light-blue">Projects</span>
+		</h1>
+		<p class="mt-4 leading-relaxed text-c-white/60">
+			A selection of things I've built. These are placeholder entries —
+			replace them with your own projects.
+		</p>
+	</div>
+
+	<!-- Grid -->
+	<div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+		{#each projects as project}
+			<ProjectCard {project} />
+		{/each}
+	</div>
+</div>
