@@ -4,14 +4,11 @@
 
 	const projects: Project[] = [
 		{
-			title: 'Project Alpha',
+			title: "Puso't Pinggan",
 			description:
-				'A full-stack web application built with SvelteKit and PostgreSQL. Features real-time collaboration and a modern responsive UI.',
+				'Food marketplace Progressive Web App (PWA) built for CS 191 and 192 (Software Engineering 1 and 2).',
 			tech: ['Svelte', 'TypeScript', 'PostgreSQL', 'Tailwind CSS'],
-			links: [
-				{ label: 'GitHub', href: '#' },
-				{ label: 'Live Demo', href: '#' }
-			],
+			links: [{ label: 'GitHub', href: 'https://github.com/mcjefdreal/PusotPinggan' }],
 			featured: true
 		},
 		{
@@ -45,8 +42,8 @@
 			<span class="text-c-light-blue">Projects</span>
 		</h1>
 		<p class="mt-4 leading-relaxed text-c-white/60">
-			A selection of things I've built. These are placeholder entries —
-			replace them with your own projects.
+			A selection of things I've built. These are placeholder entries — replace them with your own
+			projects.
 		</p>
 	</div>
 
