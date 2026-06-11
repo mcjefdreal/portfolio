@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { UserRound } from '@lucide/svelte';
+	import { SocialIcons } from '$lib/components/SocialIcons';
 
 	const skills = [
 		'Svelte',
@@ -64,6 +65,14 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- Connect -->
+	<section class="mt-16">
+		<h2 class="text-xl font-semibold text-c-white">Connect</h2>
+		<div class="mt-4">
+			<SocialIcons />
+		</div>
+	</section>
 
 	<!-- Skills -->
 	<section class="mt-16">
