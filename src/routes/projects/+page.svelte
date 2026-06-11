@@ -10,15 +10,20 @@
 			tech: ['Svelte', 'TypeScript', 'PostgreSQL', 'Tailwind CSS'],
 			links: [{ label: 'GitHub', href: 'https://github.com/mcjefdreal/PusotPinggan' }],
 			image: '/projects/pusotpinggan.jpg',
-			imageAlt: "Screenshot of Puso't Pinggan marketplace",
+			imageAlt: "Screenshot of Puso't Pinggan Login Screen",
 			featured: true
 		},
 		{
-			title: 'Project Beta',
+			title: 'michAIR jURBAN',
 			description:
-				'An open-source CLI tool for scaffolding modern web projects with zero configuration. Designed for developer productivity.',
-			tech: ['Node.js', 'TypeScript', 'Commander'],
-			links: [{ label: 'GitHub', href: '#' }]
+				'Built as the project for CS 132 (Introduction to Data Science). We investigated the correlation between Air Quality Index (AQI) and GDP of various cities in the Philippines.',
+			tech: ['Svelte'],
+			links: [
+				{ label: 'GitHub', href: 'https://github.com/mcjefdreal/michair-jurban/' },
+				{ label: 'Website', href: 'https://mcjefdreal.github.io/michair-jurban/' }
+			],
+			image: '/projects/michairjurban.png',
+			imageAlt: 'Screenshot of michAIR jURBAN Home Page'
 		},
 		{
 			title: 'Project Gamma',
@@ -26,8 +31,8 @@
 				'A design system component library with comprehensive documentation, accessibility built-in, and themeable components.',
 			tech: ['React', 'Storybook', 'CSS Modules', 'Vitest'],
 			links: [
-				{ label: 'GitHub', href: '#' },
-				{ label: 'Docs', href: '#' }
+				{ label: 'GitHub', href: 'https://github.com/mcjefdreal/michair-jurban/' },
+				{ label: 'Website', href: 'https://mcjefdreal.github.io/michair-jurban/' }
 			]
 		}
 	];
