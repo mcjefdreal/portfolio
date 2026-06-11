@@ -52,7 +52,7 @@
 
 	<!-- Grid -->
 	<div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-		{#each projects as project}
+		{#each projects as project (project.title)}
 			<ProjectCard {project} />
 		{/each}
 	</div>
