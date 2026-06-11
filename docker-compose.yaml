@@ -6,7 +6,7 @@ services:
     ports:
       - 127.0.0.1:3000:3000
     networks:
-      - caddy_net
+      - caddy-net
     environment:
       - PORT=3000
       - NODE_ENV=production
@@ -15,5 +15,5 @@ services:
       - HOST_HEADER=x-forwarded-host
 
 networks:
-  caddy_net:
+  caddy-net:
     external: true
