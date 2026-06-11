@@ -2,14 +2,14 @@
 	import { ProjectCard } from '$lib/components/ProjectCard';
 	import type { Project } from '$lib/components/ProjectCard';
 
-		const projects: Project[] = [
+	const projects: Project[] = [
 		{
 			title: "Puso't Pinggan",
 			description:
 				'Food marketplace Progressive Web App (PWA) built for CS 191 and 192 (Software Engineering 1 and 2).',
 			tech: ['Svelte', 'TypeScript', 'PostgreSQL', 'Tailwind CSS'],
 			links: [{ label: 'GitHub', href: 'https://github.com/mcjefdreal/PusotPinggan' }],
-			image: '/projects/placeholder.svg',
+			image: '/projects/pusotpinggan.jpg',
 			imageAlt: "Screenshot of Puso't Pinggan marketplace",
 			featured: true
 		},
@@ -43,11 +43,6 @@
 		<h1 class="text-3xl font-bold tracking-tight text-c-white sm:text-4xl">
 			<span class="text-c-light-blue">Projects</span>
 		</h1>
-		<p class="mt-4 leading-relaxed text-c-white/60">
-			A selection of things I've built. Add your project screenshots in
-			<code class="rounded bg-white/5 px-1.5 py-0.5 text-sm text-c-light-blue">static/projects/</code>
-			and reference them with the <code class="rounded bg-white/5 px-1.5 py-0.5 text-sm text-c-light-blue">image</code> field.
-		</p>
 	</div>
 
 	<!-- Grid -->
