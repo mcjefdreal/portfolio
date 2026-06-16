@@ -23,17 +23,10 @@
 
 	const experiences = [
 		{
-			role: 'Software Engineer',
-			company: 'Company Name',
-			period: '2024 — Present',
-			description: 'Built and maintained modern web applications using SvelteKit and TypeScript.'
-		},
-		{
-			role: 'Junior Developer',
-			company: 'Previous Company',
-			period: '2022 — 2024',
-			description:
-				'Contributed to full-stack features, wrote automated tests, and collaborated on design systems.'
+			role: 'Information Security Management Intern',
+			company: 'Asia United Bank',
+			period: '2026 - Present',
+			description: 'Helped created scripts and programs to streamline and automate different tasks.'
 		}
 	];
 </script>
