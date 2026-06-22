@@ -2,24 +2,15 @@
 	import { UserRound } from '@lucide/svelte';
 	import { SocialIcons } from '$lib/components/SocialIcons';
 
-	const skills = [
-		'Svelte',
-		'SvelteKit',
-		'Python',
-		'TypeScript',
-		'JavaScript',
-		'HTML',
-		'CSS',
-		'Flutter',
-		'C',
-		'Tailwind CSS',
-		'Docker',
-		'MySQL',
-		'PostgreSQL',
-		'Node.js',
-		'Git',
-		'GitHub'
-	];
+	const skillsByCategory = {
+		Languages: ['Python', 'TypeScript', 'JavaScript', 'C', 'HTML', 'CSS'],
+		'Libraries & Frameworks': ['Svelte', 'SvelteKit', 'Tailwind CSS', 'Flutter', 'Node.js'],
+		Tools: ['Docker', 'MySQL', 'PostgreSQL', 'Git', 'GitHub']
+	} as const;
+
+	function slugify(text: string): string {
+		return text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+	}
 
 	const experiences = [
 		{
@@ -93,15 +84,23 @@
 	<!-- Skills -->
 	<section class="mt-16">
 		<h2 class="text-xl font-semibold text-c-white">Skills</h2>
-		<div class="mt-4 flex flex-wrap gap-2">
-			{#each skills as skill (skill)}
-				<span
-					class="rounded-full bg-c-light-blue/10 px-4 py-1.5 text-sm font-medium text-c-light-blue"
-				>
-					{skill}
-				</span>
-			{/each}
-		</div>
+		{#each Object.entries(skillsByCategory) as [category, items]}
+			{@const slug = slugify(category)}
+			<h3 id="skills-{slug}" class="mt-6 text-sm font-semibold uppercase tracking-wider text-c-white/50">
+				{category}
+			</h3>
+			<ul class="mt-3 flex flex-wrap gap-2" aria-labelledby="skills-{slug}">
+				{#each items as item (item)}
+					<li>
+						<span
+							class="rounded-full bg-c-light-blue/10 px-4 py-1.5 text-sm font-medium text-c-light-blue"
+						>
+							{item}
+						</span>
+					</li>
+				{/each}
+			</ul>
+		{/each}
 	</section>
 
 	<!-- Experience -->
