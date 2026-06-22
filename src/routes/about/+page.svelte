@@ -3,8 +3,8 @@
 
 	const skillsByCategory = {
 		Languages: ['Python', 'TypeScript', 'JavaScript', 'C', 'HTML', 'CSS'],
-		'Libraries & Frameworks': ['Svelte', 'SvelteKit', 'Tailwind CSS', 'Flutter', 'Node.js'],
-		Tools: ['Docker', 'MySQL', 'PostgreSQL', 'Git', 'GitHub']
+		'Libraries & Frameworks': ['Svelte', 'SvelteKit', 'Tailwind CSS', 'Flutter'],
+		Tools: ['Docker', 'MySQL', 'PostgreSQL', 'Git', 'GitHub', 'Node.js']
 	} as const;
 
 	function slugify(text: string): string {
