@@ -86,7 +86,7 @@
 	<!-- Skills -->
 	<section class="mt-16">
 		<h2 class="text-xl font-semibold text-c-white">Skills</h2>
-		{#each Object.entries(skillsByCategory) as [category, items]}
+		{#each Object.entries(skillsByCategory) as [category, items] (category)}
 			{@const slug = slugify(category)}
 			<h3
 				id="skills-{slug}"
