@@ -29,6 +29,14 @@
 			description: 'Helped created scripts and programs to streamline and automate different tasks.'
 		}
 	];
+
+	function handleImageError(e: Event) {
+		const img = e.currentTarget as HTMLImageElement;
+		const wrapper = img.parentElement;
+		if (wrapper) {
+			wrapper.style.display = 'none';
+		}
+	}
 </script>
 
 <svelte:head>
@@ -58,9 +66,18 @@
 		<!-- Photo placeholder -->
 		<div class="flex items-start justify-center md:col-span-2">
 			<div
-				class="flex h-48 w-48 items-center justify-center rounded-full bg-white/5 ring-1 ring-white/10 sm:h-56 sm:w-56"
+				class="flex h-48 w-48 items-center justify-center overflow-hidden rounded-full bg-white/5 ring-1 ring-white/10 sm:h-56 sm:w-56"
 			>
-				<UserRound class="h-20 w-20 text-c-white/20" />
+				<img
+					src="/profile.png"
+					alt="GitHub Picture of mcjefdreal"
+					width="224"
+					height="224"
+					loading="eager"
+					decoding="async"
+					class="h-full w-full object-cover"
+					onerror={handleImageError}
+				/>
 			</div>
 		</div>
 	</div>
