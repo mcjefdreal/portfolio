@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { UserRound } from '@lucide/svelte';
 	import { SocialIcons } from '$lib/components/SocialIcons';
 
 	const skillsByCategory = {
@@ -9,7 +8,10 @@
 	} as const;
 
 	function slugify(text: string): string {
-		return text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+		return text
+			.toLowerCase()
+			.replace(/[^a-z0-9]+/g, '-')
+			.replace(/^-|-$/g, '');
 	}
 
 	const experiences = [
@@ -86,7 +88,10 @@
 		<h2 class="text-xl font-semibold text-c-white">Skills</h2>
 		{#each Object.entries(skillsByCategory) as [category, items]}
 			{@const slug = slugify(category)}
-			<h3 id="skills-{slug}" class="mt-6 text-sm font-semibold uppercase tracking-wider text-c-white/50">
+			<h3
+				id="skills-{slug}"
+				class="mt-6 text-sm font-semibold tracking-wider text-c-white/50 uppercase"
+			>
 				{category}
 			</h3>
 			<ul class="mt-3 flex flex-wrap gap-2" aria-labelledby="skills-{slug}">
