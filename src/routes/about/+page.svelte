@@ -97,11 +97,7 @@
 			<ul class="mt-3 flex flex-wrap gap-2" aria-labelledby="skills-{slug}">
 				{#each items as item (item)}
 					<li>
-						<span
-							class="font-mono text-xs rounded-sm border border-white/10 bg-white/[0.03] px-2 py-0.5 text-c-white/70"
-						>
-							{item}
-						</span>
+						<span class="font-mono text-xs rounded-sm border border-white/10 bg-white/[0.03] px-2 py-0.5 text-c-white/70">{item}</span>
 					</li>
 				{/each}
 			</ul>

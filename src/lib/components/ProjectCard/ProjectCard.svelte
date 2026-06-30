@@ -22,7 +22,7 @@
 
 <div
 	class={cn(
-		'group flex flex-col overflow-hidden rounded-lg border bg-white/[0.02] transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-c-black/50',
+		'flex flex-col overflow-hidden rounded-lg border bg-white/[0.02] transition-all hover:-translate-y-0.5',
 		project.featured ? 'border-t-2 border-t-c-light-blue border-white/10' : 'border-white/10 hover:border-c-light-blue/40',
 		className
 	)}
@@ -39,7 +39,7 @@
 				height="450"
 				loading="lazy"
 				decoding="async"
-			class="aspect-video w-full object-cover transition-all duration-300"
+			class="aspect-video w-full object-cover"
 			onerror={handleImageError}
 			/>
 		</div>
@@ -54,9 +54,7 @@
 		{#if project.tech.length > 0}
 			<div class="mt-4 flex flex-wrap gap-2">
 				{#each project.tech as tech (tech)}
-				<span class="font-mono text-xs rounded-sm border border-white/10 bg-white/[0.03] px-2 py-0.5 text-c-white/70">
-					{tech}
-				</span>
+				<span class="font-mono text-xs rounded-sm border border-white/10 bg-white/[0.03] px-2 py-0.5 text-c-white/70">{tech}</span>
 				{/each}
 			</div>
 		{/if}

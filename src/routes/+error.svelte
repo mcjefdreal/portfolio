@@ -12,8 +12,7 @@
 	<p class="mt-4 text-lg text-c-white/70">
 		{page.error?.message ?? 'Something went wrong.'}
 	</p>
-	<a
-		href={resolve('/')}
+	<a href={resolve('/')}
 		class="mt-8 inline-flex h-11 items-center rounded-lg border border-white/15 px-8 text-sm font-medium text-c-white/80 transition-all hover:border-white/30 hover:text-c-white"
 	>
 		Go Home
