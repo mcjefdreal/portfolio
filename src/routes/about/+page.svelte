@@ -41,13 +41,11 @@
 	<div class="grid gap-10 md:grid-cols-5">
 		<!-- Bio text -->
 		<div class="md:col-span-3">
-			<h1 class="text-3xl font-bold tracking-tight text-c-white sm:text-4xl">
-				About Me
-			</h1>
+			<h1 class="text-3xl font-bold tracking-tight text-c-white sm:text-4xl">About Me</h1>
 
 			<p class="mt-6 leading-relaxed text-c-white/70">
-				Full-stack developer and CS student at UP Diliman. I like building tools that work
-				and code that holds up.
+				Full-stack developer and CS student at UP Diliman. I like building tools that work and code
+				that holds up.
 			</p>
 
 			<p class="mt-6 leading-relaxed text-c-white/70">
@@ -97,7 +95,10 @@
 			<ul class="mt-3 flex flex-wrap gap-2" aria-labelledby="skills-{slug}">
 				{#each items as item (item)}
 					<li>
-						<span class="font-mono text-xs rounded-sm border border-white/10 bg-white/[0.03] px-2 py-0.5 text-c-white/70">{item}</span>
+						<span
+							class="text-s rounded-sm border border-white/10 bg-white/[0.03] px-2 py-0.5 font-mono text-c-white/70"
+							>{item}</span
+						>
 					</li>
 				{/each}
 			</ul>
