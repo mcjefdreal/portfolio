@@ -1,36 +1,32 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
 	import { HeroBackground } from '$lib/components/HeroBackground';
-	import { TypingAnimation } from '$lib/components/magic/typing-animation';
+	import { SocialIcons } from '$lib/components/SocialIcons';
 </script>
 
 <svelte:head>
-	<title>Home — Portfolio</title>
+	<title>Michael Real — Full-stack Developer</title>
 </svelte:head>
 
 <section
-	class="relative flex min-h-[calc(100vh-4rem)] w-full items-center justify-center overflow-hidden"
+	class="relative flex min-h-[calc(100vh-4rem)] w-full items-center overflow-hidden"
 >
 	<HeroBackground />
 
-	<div class="hero-content relative z-10 mx-auto max-w-3xl px-6 text-center">
-		<h1 class="text-4xl font-bold tracking-tight text-c-white sm:text-5xl lg:text-6xl">
-			Hi, I'm <span class="text-c-light-blue">Michael Real</span>
+	<div class="relative z-10 mx-auto w-full max-w-5xl px-6">
+		<p class="fade-up text-sm text-c-light-blue/80" style="--i: 0">
+			Full-stack developer · Manila
+		</p>
+
+		<h1 class="fade-up mt-4 text-5xl font-bold tracking-tight text-c-white sm:text-6xl lg:text-7xl text-balance" style="--i: 1">
+			Michael Real
 		</h1>
 
-		<div class="mt-6 text-lg text-c-white/70 sm:text-xl">
-			<TypingAnimation
-				words={['Full-stack developer', 'Programmer', 'Avid learner']}
-				loop
-				pauseDelay={2000}
-			/>
-		</div>
+		<p class="fade-up mt-4 text-lg text-c-white/70 text-balance" style="--i: 2">
+			I build clean, functional web apps with Svelte, TypeScript, and an eye for detail.
+		</p>
 
-		<!-- <p class="mx-auto mt-6 max-w-xl text-sm leading-relaxed text-c-white/50 sm:text-base">
-			I build clean, functional websites with modern web technologies.
-		</p> -->
-
-		<div class="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+		<div class="fade-up mt-8 flex gap-4" style="--i: 3">
 			<a
 				href={resolve('/projects')}
 				class="inline-flex h-11 items-center rounded-lg bg-c-light-blue px-8 text-sm font-medium text-c-black transition-all hover:bg-c-light-blue/90"
@@ -39,27 +35,14 @@
 			</a>
 			<a
 				href={resolve('/about')}
-				class="inline-flex h-11 items-center rounded-lg border border-white/20 px-8 text-sm font-medium text-c-white/80 transition-all hover:border-c-white/40 hover:text-c-white"
+				class="inline-flex h-11 items-center rounded-lg border border-white/15 px-8 text-sm font-medium text-c-white/80 transition-all hover:border-white/30 hover:text-c-white"
 			>
 				About Me
 			</a>
 		</div>
+
+		<div class="fade-up mt-8" aria-label="Social links" style="--i: 4">
+			<SocialIcons />
+		</div>
 	</div>
 </section>
-
-<style>
-	.hero-content {
-		animation: hero-fade-in 1s ease-out 0.3s both;
-	}
-
-	@keyframes hero-fade-in {
-		from {
-			opacity: 0;
-			translate: 0 20px;
-		}
-		to {
-			opacity: 1;
-			translate: 0 0;
-		}
-	}
-</style>
