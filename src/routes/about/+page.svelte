@@ -42,12 +42,12 @@
 		<!-- Bio text -->
 		<div class="md:col-span-3">
 			<h1 class="text-3xl font-bold tracking-tight text-c-white sm:text-4xl">
-				About <span class="text-c-light-blue">Me</span>
+				About Me
 			</h1>
 
 			<p class="mt-6 leading-relaxed text-c-white/70">
-				I'm a passionate full-stack web and software developer who enjoys building things. Always
-				looking to improve and learn more about the latest technologies and best practices.
+				Full-stack developer and CS student at UP Diliman. I like building tools that work
+				and code that holds up.
 			</p>
 
 			<p class="mt-6 leading-relaxed text-c-white/70">
@@ -98,7 +98,7 @@
 				{#each items as item (item)}
 					<li>
 						<span
-							class="rounded-full bg-c-light-blue/10 px-4 py-1.5 text-sm font-medium text-c-light-blue"
+							class="font-mono text-xs rounded-sm border border-white/10 bg-white/[0.03] px-2 py-0.5 text-c-white/70"
 						>
 							{item}
 						</span>
