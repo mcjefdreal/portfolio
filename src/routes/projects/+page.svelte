@@ -9,7 +9,7 @@
 				'Food marketplace Progressive Web App (PWA) built for CS 191 and 192 (Software Engineering 1 and 2).',
 			tech: ['Svelte', 'Tailwind CSS', 'PostgreSQL', 'TypeScript', 'JavaScript'],
 			links: [{ label: 'GitHub', href: 'https://github.com/mcjefdreal/PusotPinggan' }],
-			image: '/projects/pusotpinggan.jpg',
+			image: 'pusotpinggan.jpg',
 			imageAlt: "Screenshot of Puso't Pinggan Login Screen",
 			featured: true
 		},
@@ -22,7 +22,7 @@
 				{ label: 'GitHub', href: 'https://github.com/BastiDood/drap/' },
 				{ label: 'Website', href: 'https://drap.dcs.upd.edu.ph/' }
 			],
-			image: '/projects/drap.png',
+			image: 'drap.png',
 			imageAlt: 'Screenshot of DRAP Home Page'
 		},
 		{
@@ -34,7 +34,7 @@
 				{ label: 'GitHub', href: 'https://github.com/mcjefdreal/michair-jurban/' },
 				{ label: 'Website', href: 'https://mcjefdreal.github.io/michair-jurban/' }
 			],
-			image: '/projects/michairjurban.png',
+			image: 'michairjurban.png',
 			imageAlt: 'Screenshot of michAIR jURBAN Home Page'
 		}
 	];
@@ -47,9 +47,7 @@
 <div class="mx-auto w-full max-w-5xl px-6 py-10 sm:py-16">
 	<!-- Header -->
 	<div class="max-w-2xl">
-		<h1 class="text-3xl font-bold tracking-tight text-c-white sm:text-4xl">
-			Projects
-		</h1>
+		<h1 class="text-3xl font-bold tracking-tight text-c-white sm:text-4xl">Projects</h1>
 	</div>
 
 	<!-- Grid -->
