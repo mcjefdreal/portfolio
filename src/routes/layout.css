@@ -158,3 +158,36 @@
   --color-c-brown: #796465;
   --color-c-white: #f0edee;
 }
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    translate: 0 16px;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+@layer utilities {
+  .bg-dot-grid {
+    background-image: radial-gradient(currentColor 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  .fade-up {
+    opacity: 0;
+    translate: 0 16px;
+    animation: fade-up 0.6s ease-out forwards;
+    animation-delay: calc(var(--i, 0) * 80ms);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-up {
+    opacity: 1;
+    translate: 0 0;
+    animation: none;
+  }
+}
