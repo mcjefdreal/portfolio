@@ -47,7 +47,8 @@
 				alt={project.imageAlt ?? project.title}
 				width="800"
 				height="450"
-				loading="lazy"
+				loading="eager"
+				fetchpriority="high"
 				decoding="async"
 				class="aspect-video w-full object-cover"
 				onerror={handleImageError}
