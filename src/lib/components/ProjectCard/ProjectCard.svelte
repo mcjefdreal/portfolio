@@ -22,18 +22,15 @@
 
 <div
 	class={cn(
-		'group flex flex-col overflow-hidden rounded-lg border bg-white/[0.02] transition-all hover:bg-white/[0.04]',
-		project.featured ? 'border-c-light-blue/30' : 'border-white/10',
+		'group flex flex-col overflow-hidden rounded-lg border bg-white/[0.02] transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-c-black/50',
+		project.featured ? 'border-t-2 border-t-c-light-blue border-white/10' : 'border-white/10 hover:border-c-light-blue/40',
 		className
 	)}
 >
 	<!-- Thumbnail -->
 	{#if project.image}
 		<div
-			class={cn(
-				'overflow-hidden border-b',
-				project.featured ? 'border-c-light-blue/30' : 'border-white/10'
-			)}
+			class="overflow-hidden border-b border-white/10"
 		>
 			<img
 				src={project.image}
@@ -42,8 +39,8 @@
 				height="450"
 				loading="lazy"
 				decoding="async"
-				class="aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-105"
-				onerror={handleImageError}
+			class="aspect-video w-full object-cover transition-all duration-300"
+			onerror={handleImageError}
 			/>
 		</div>
 	{/if}
@@ -57,9 +54,9 @@
 		{#if project.tech.length > 0}
 			<div class="mt-4 flex flex-wrap gap-2">
 				{#each project.tech as tech (tech)}
-					<span class="rounded-full bg-c-light-blue/10 px-3 py-1 text-xs font-medium text-c-light-blue">
-						{tech}
-					</span>
+				<span class="font-mono text-xs rounded-sm border border-white/10 bg-white/[0.03] px-2 py-0.5 text-c-white/70">
+					{tech}
+				</span>
 				{/each}
 			</div>
 		{/if}
