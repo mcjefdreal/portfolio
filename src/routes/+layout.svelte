@@ -8,7 +8,7 @@
 </script>
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
-<div class="flex min-h-screen flex-col bg-c-black text-c-white">
+<div class="flex min-h-screen flex-col bg-c-black text-c-white" data-sveltekit-preload-data="hover">
 	<Navbar />
 	<main class="flex-1">
 		{@render children()}
