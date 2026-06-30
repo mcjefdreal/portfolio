@@ -48,7 +48,7 @@
 	<!-- Header -->
 	<div class="max-w-2xl">
 		<h1 class="text-3xl font-bold tracking-tight text-c-white sm:text-4xl">
-			<span class="text-c-light-blue">Projects</span>
+			Projects
 		</h1>
 	</div>
 
