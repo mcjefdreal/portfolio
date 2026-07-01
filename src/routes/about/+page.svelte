@@ -7,6 +7,20 @@
 		Tools: ['Docker', 'MySQL', 'PostgreSQL', 'Git', 'GitHub', 'Node.js']
 	} as const;
 
+	// TAILWIND SAFELIST: border-c-light-blue/25 bg-c-light-blue/[0.08] text-c-light-blue
+	// TAILWIND SAFELIST: border-c-light-pink/25 bg-c-light-pink/[0.08] text-c-light-pink
+	// TAILWIND SAFELIST: border-c-gray/25 bg-c-gray/[0.08] text-c-gray
+
+	const categoryColors: Record<string, string> = {
+		Languages: 'border-c-light-blue/25 bg-c-light-blue/[0.08] text-c-light-blue',
+		'Libraries & Frameworks': 'border-c-light-pink/25 bg-c-light-pink/[0.08] text-c-light-pink',
+		Tools: 'border-c-gray/25 bg-c-gray/[0.08] text-c-gray'
+	};
+
+	function skillClass(category: string): string {
+		return categoryColors[category] ?? 'border-white/10 bg-white/[0.03] text-c-white/70';
+	}
+
 	function slugify(text: string): string {
 		return text
 			.toLowerCase()
@@ -96,7 +110,7 @@
 				{#each items as item (item)}
 					<li>
 						<span
-							class="text-s rounded-sm border border-white/10 bg-white/[0.03] px-2 py-0.5 font-mono text-c-white/70"
+							class="text-s rounded-sm px-2 py-0.5 font-mono {skillClass(category)}"
 							>{item}</span
 						>
 					</li>

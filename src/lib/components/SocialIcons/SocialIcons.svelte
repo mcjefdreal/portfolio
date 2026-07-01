@@ -12,7 +12,7 @@
 			title={link.label}
 			target={isMail ? undefined : '_blank'}
 			rel={isMail ? undefined : 'noopener noreferrer'}
-			class="text-c-white/50 transition-colors hover:text-c-light-blue"
+			class="text-c-white/60 transition-colors hover:text-c-light-blue"
 		>
 			<Icon class="h-5 w-5" />
 		</a>

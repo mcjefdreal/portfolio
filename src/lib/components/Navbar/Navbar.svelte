@@ -16,7 +16,7 @@
 	}
 </script>
 
-<nav class="sticky top-0 z-10 w-full border-b border-white/10 bg-c-black/80 backdrop-blur-sm">
+<nav class="sticky top-0 z-10 w-full border-b-2 border-c-light-blue/15 bg-c-black/80 backdrop-blur-sm">
 	<div class="mx-auto flex h-16 max-w-5xl items-center justify-center px-6">
 		<ul class="flex items-center gap-x-1">
 			{#each links as { href, label } (href)}
