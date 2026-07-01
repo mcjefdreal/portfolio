@@ -20,9 +20,25 @@
 	<div class="mx-auto flex h-16 max-w-5xl items-center justify-between px-6">
 		<a
 			href={resolve('/')}
-			class="text-sm font-bold tracking-tight whitespace-nowrap text-c-white transition-colors hover:text-c-light-blue"
+			class="flex shrink-0 items-center text-c-white transition-colors hover:text-c-light-blue"
 		>
-			Michael Real
+			<div
+				class="flex h-9 w-9 items-center justify-center overflow-hidden rounded-full bg-white/5 ring-1 ring-white/10 transition-shadow hover:ring-c-light-blue/50"
+			>
+				<img
+					src="/profile.png"
+					alt="Michael Real"
+					width="36"
+					height="36"
+					loading="eager"
+					decoding="async"
+					class="h-full w-full object-cover"
+					onerror={(e) => {
+						const wrapper = e.currentTarget.parentElement;
+						if (wrapper) wrapper.style.display = 'none';
+					}}
+				/>
+			</div>
 		</a>
 		<ul class="flex items-center gap-x-1">
 			{#each links as { href, label } (href)}
