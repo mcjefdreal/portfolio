@@ -1,1 +1,1 @@
-export { default as HeroBackground } from "./HeroBackground.svelte";
+export { default as HeroBackground } from './HeroBackground.svelte';

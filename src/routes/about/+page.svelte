@@ -96,7 +96,7 @@
 				{#each items as item (item)}
 					<li>
 						<span
-							class="text-sm rounded-sm border border-c-gray/25 bg-c-gray/[0.08] px-2 py-0.5 font-mono text-c-gray"
+							class="rounded-sm border border-c-gray/25 bg-c-gray/[0.08] px-2 py-0.5 font-mono text-sm text-c-gray"
 							>{item}</span
 						>
 					</li>
