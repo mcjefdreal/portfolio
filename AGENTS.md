@@ -9,7 +9,7 @@ Owner: Michael Real. Author identifier on home page: "Michael Real" / `mcjefd.de
   Do not introduce `package-lock.json` or `yarn.lock`. The `pnpm-workspace.yaml`
   only whitelists `esbuild` as a build script — keep that allowlist current if you
   add packages with postinstall scripts.
-- **Node 20** in the Docker image; match locally to avoid surprises.
+- **Node 24** in the Docker image; match locally to avoid surprises.
 - **Svelte 5 runes** syntax is in use (`$props()`, `{@render children()}` in
   `+layout.svelte`). Don't add Svelte 4-style `export let` / `<slot>`.
 

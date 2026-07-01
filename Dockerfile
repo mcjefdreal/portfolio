@@ -11,7 +11,7 @@ COPY . .
 
 RUN pnpm build
 
-FROM node:20-slim AS runner
+FROM node:24-slim AS runner
 WORKDIR /app
 
 RUN corepack enable pnpm && corepack prepare pnpm@11.9.0 --activate
