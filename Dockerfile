@@ -1,7 +1,7 @@
 FROM node:20-slim AS builder
 WORKDIR /app
 
-RUN npm install -g pnpm
+RUN corepack enable pnpm && corepack prepare pnpm@11.9.0 --activate
 
 COPY package.json pnpm-lock.yaml ./
 
@@ -14,7 +14,8 @@ RUN pnpm build
 FROM node:20-slim AS runner
 WORKDIR /app
 
-RUN npm install -g pnpm
+RUN corepack enable pnpm && corepack prepare pnpm@11.9.0 --activate
+
 
 COPY --from=builder /app/build ./build
 COPY --from=builder /app/package.json ./package.json
