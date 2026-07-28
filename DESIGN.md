@@ -3,9 +3,9 @@ name: Michael Real — Portfolio
 description: Personal portfolio for Michael Real, full-stack developer. Quiet craft, dark navy surfaces, muted maritime accent, single geometric sans-serif voice.
 colors:
   developer-blue-black: '#061f2f'
-  muted-maritime: '#6d98ba'
+  muted-maritime: '#4a8ec2'
   soft-chalk: '#f0edee'
-  hushed-blue-gray: '#9aadbf'
+  hushed-blue-gray: '#95a8bc'
 typography:
   display:
     fontFamily: 'Plein, system-ui, sans-serif'
@@ -103,13 +103,13 @@ The palette is a cool, muted spectrum — dark-to-light on a blue-gray axis. Fou
 
 ### Primary
 
-- **Muted Maritime** (#6d98ba): The lone accent. Used on primary CTAs (solid fill), active nav indicators (bottom border), hover states on links and icons. Its chroma is intentionally low — it signals without shouting. Applied to ≤10% of any given surface.
+- **Muted Maritime** (#4a8ec2): The lone accent. Used on primary CTAs (solid fill), active nav indicators (bottom border), hover states on links and icons. A vivid maritime blue with enough chroma to read confidently against the dark navy — it signals with presence, not volume. Applied to ≤10% of any given surface.
 
 ### Neutral
 
 - **Developer Blue-Black** (#061f2f): Page background, hero surface, the color of focus. Dark enough to recede, blue enough to feel warm beside the accent. Serves as the canvas for everything.
 - **Soft Chalk** (#f0edee): Primary text color. An off-white with a barely-perceptible warmth that softens the contrast against dark navy. At 70% opacity for body text, at full opacity for headlines.
-- **Hushed Blue-Gray** (#9aadbf): Muted secondary text. Used for skill tags, card descriptions (60% opacity), secondary navigation labels. Never used at full opacity for body copy — it's a supporting voice, not the lead.
+- **Hushed Blue-Gray** (#95a8bc): Muted secondary text. Used for skill tags, card descriptions (60% opacity), secondary navigation labels. Never used at full opacity for body copy — it's a supporting voice, not the lead.
 
 ### Named Rules
 
@@ -158,7 +158,7 @@ This system conveys depth through **tonal layering**, not shadows. No `box-shado
 
 ### Buttons
 
-**Primary CTA.** Solid fill with Muted Maritime (#6d98ba) on dark ink text (#061f2f). Height: 2.75rem (h-11). Padding: 0 2rem (px-8). Radius: 0.625rem (rounded-lg). Font: Plein Medium 0.875rem. Hover: accent lightens to 90% opacity. Used for the hero "View Projects" button — the only solid-fill element on any page, per the One Accent Rule.
+**Primary CTA.** Solid fill with Muted Maritime (#4a8ec2) on dark ink text (#061f2f). Height: 2.75rem (h-11). Padding: 0 2rem (px-8). Radius: 0.625rem (rounded-lg). Font: Plein Medium 0.875rem. Hover: accent lightens to 90% opacity. Used for the hero "View Projects" button — the only solid-fill element on any page, per the One Accent Rule.
 
 **Ghost CTA.** Transparent background with white 15% border and white 80% text. Same dimensions as primary. Hover: border lightens to 30%, text reaches full opacity. Used for the hero "About Me" button. Never paired with a primary CTA of a different color — the ghost is the secondary to Muted Maritime's primary.
 
@@ -182,7 +182,7 @@ This system conveys depth through **tonal layering**, not shadows. No `box-shado
 
 ### Hero Background
 
-**Dot Grid + Glow.** Pure CSS decorative element behind the hero section. Solid Developer Blue-Black base. Radial glow: `rgba(109,152,186,0.12)` (Muted Maritime at 12%) centered. Dot grid: 1px dots at 24px spacing using `radial-gradient`. Fades in over 0.8s on load. Entire element is `aria-hidden="true"` — purely atmospheric.
+**Dot Grid + Glow.** Pure CSS decorative element behind the hero section. Solid Developer Blue-Black base. Radial glow: `rgba(74,142,194,0.12)` (Muted Maritime at 12%) centered. Dot grid: 1px dots at 24px spacing using `radial-gradient`. Fades in over 0.8s on load. Entire element is `aria-hidden="true"` — purely atmospheric.
 
 ### Social Icons
 
@@ -192,7 +192,7 @@ This system conveys depth through **tonal layering**, not shadows. No `box-shado
 
 ### Do:
 
-- **Do** use Muted Maritime (#6d98ba) for the one primary CTA per page and for hover/active states. Never more than one solid-fill accent element visible at once.
+- **Do** use Muted Maritime (#4a8ec2) for the one primary CTA per page and for hover/active states. Never more than one solid-fill accent element visible at once.
 - **Do** use Developer Blue-Black (#061f2f) as the only page background. No tinted near-black alternatives.
 - **Do** keep body text at 70% opacity (#f0edee at 0.7) on dark backgrounds, with line-height 1.6 for comfortable reading.
 - **Do** use `text-wrap: balance` on all heading elements (h1–h3) for even line wrapping.
@@ -213,4 +213,4 @@ This system conveys depth through **tonal layering**, not shadows. No `box-shado
 - **Don't** use glassmorphism or decorative blurs. The navbar's backdrop-blur is functional, not aesthetic.
 - **Don't** nest cards inside cards. A container inside a container is always wrong.
 - **Don't** lower body text opacity below 60% on dark backgrounds. Light text on dark needs enough contrast to stay readable.
-- **Don't** add a second accent color. Muted Maritime (#6d98ba) is the only accent. The reserve colors (muted pink #cb8589, dusty brown #796465) exist in tokens but must not be used without a deliberate, named design decision.
+- **Don't** add a second accent color. Muted Maritime (#4a8ec2) is the only accent. The reserve colors (muted pink #d48487, dusty brown #796465) exist in tokens but must not be used without a deliberate, named design decision.

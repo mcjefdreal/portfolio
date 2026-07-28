@@ -75,7 +75,7 @@
 
 	<!-- Connect -->
 	<section class="mt-16">
-		<h2 class="text-xl font-semibold text-c-light-blue">Connect</h2>
+		<h2 class="text-xl font-semibold text-c-white">Connect</h2>
 		<div class="mt-4">
 			<SocialIcons />
 		</div>
@@ -83,12 +83,12 @@
 
 	<!-- Skills -->
 	<section class="mt-16">
-		<h2 class="text-xl font-semibold text-c-light-blue">Skills</h2>
+		<h2 class="text-xl font-semibold text-c-white">Skills</h2>
 		{#each Object.entries(skillsByCategory) as [category, items] (category)}
 			{@const slug = slugify(category)}
 			<h3
 				id="skills-{slug}"
-				class="mt-6 text-sm font-semibold tracking-wider text-c-light-pink/70 uppercase"
+				class="mt-6 text-sm font-semibold tracking-wider text-c-gray/70 uppercase"
 			>
 				{category}
 			</h3>
@@ -107,7 +107,7 @@
 
 	<!-- Experience -->
 	<section class="mt-16">
-		<h2 class="text-xl font-semibold text-c-light-blue">Experience</h2>
+		<h2 class="text-xl font-semibold text-c-white">Experience</h2>
 		<div class="mt-4 space-y-6">
 			{#each experiences as exp (`${exp.role}|${exp.company}`)}
 				<div class="rounded-lg border border-white/10 bg-c-light-pink/[0.04] p-5">
@@ -116,7 +116,7 @@
 							<h3 class="font-semibold text-c-white">{exp.role}</h3>
 							<p class="text-sm text-c-light-blue">{exp.company}</p>
 						</div>
-						<span class="shrink-0 text-sm text-c-brown/70">{exp.period}</span>
+						<span class="shrink-0 text-sm text-c-gray/70">{exp.period}</span>
 					</div>
 					<p class="mt-3 text-sm leading-relaxed text-pretty text-c-white/60">{exp.description}</p>
 				</div>
