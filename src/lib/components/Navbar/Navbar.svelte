@@ -17,7 +17,7 @@
 </script>
 
 <nav
-	class="sticky top-0 z-10 w-full border-b-2 border-c-light-blue/15 bg-c-black/80 backdrop-blur-sm"
+	class="sticky top-0 z-10 w-full border-b-2 border-c-light-blue/25 bg-c-black/80 backdrop-blur-sm"
 >
 	<div class="mx-auto flex h-16 max-w-5xl items-center justify-center px-6">
 		<ul class="flex items-center gap-x-1">

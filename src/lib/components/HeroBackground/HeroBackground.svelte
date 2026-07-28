@@ -24,13 +24,13 @@
 	.glow {
 		position: absolute;
 		inset: 0;
-		background: radial-gradient(circle at 20% 20%, rgba(109, 152, 186, 0.12), transparent 60%);
+		background: radial-gradient(circle at 20% 20%, rgba(109, 152, 186, 0.18), transparent 60%);
 	}
 
 	.grid {
 		position: absolute;
 		inset: 0;
-		background-image: radial-gradient(rgba(109, 152, 186, 0.04) 1px, transparent 1px);
+		background-image: radial-gradient(rgba(109, 152, 186, 0.06) 1px, transparent 1px);
 		background-size: 24px 24px;
 		mask-image: radial-gradient(ellipse at center, black, transparent 75%);
 		-webkit-mask-image: radial-gradient(ellipse at center, black, transparent 75%);
