@@ -7,7 +7,21 @@
 	let { children } = $props();
 </script>
 
-<svelte:head><link rel="icon" href={favicon} /></svelte:head>
+<svelte:head>
+	<link rel="icon" href={favicon} />
+	<meta property="og:title" content="Michael Real — Full-stack Developer" />
+	<meta
+		property="og:description"
+		content="Full-stack developer and CS student. I build clean, functional web apps with Svelte, TypeScript, and an eye for detail."
+	/>
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://mcjefd.dev" />
+	<meta name="twitter:card" content="summary" />
+	<meta
+		name="description"
+		content="Full-stack developer and CS student. I build clean, functional web apps with Svelte, TypeScript, and an eye for detail."
+	/>
+</svelte:head>
 <div class="flex min-h-screen flex-col bg-c-black text-c-white" data-sveltekit-preload-data="hover">
 	<a
 		href="#main"

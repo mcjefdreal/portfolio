@@ -8,7 +8,7 @@
 	<title>Michael Real — Full-stack Developer</title>
 </svelte:head>
 
-<section class="relative flex min-h-[calc(100vh-4rem)] w-full items-center overflow-hidden">
+<section class="relative flex min-h-[100dvh] w-full items-center overflow-hidden">
 	<HeroBackground />
 
 	<div class="relative z-10 mx-auto w-full max-w-5xl px-6">
@@ -28,13 +28,13 @@
 		<div class="fade-up mt-8 flex gap-4" style="--i: 3">
 			<a
 				href={resolve('/projects')}
-				class="inline-flex h-11 items-center rounded-lg bg-c-light-blue px-8 text-sm font-medium text-c-black transition-all hover:bg-c-light-blue/90 focus-visible:ring-2 focus-visible:ring-c-light-blue focus-visible:ring-offset-2 focus-visible:ring-offset-c-black focus-visible:outline-none"
+				class="inline-flex h-11 items-center rounded-lg bg-c-light-blue px-8 text-sm font-medium text-c-black transition-all hover:bg-c-light-blue/90 focus-visible:ring-2 focus-visible:ring-c-light-blue focus-visible:ring-offset-2 focus-visible:ring-offset-c-black focus-visible:outline-none active:scale-[0.98]"
 			>
 				View Projects
 			</a>
 			<a
 				href={resolve('/about')}
-				class="inline-flex h-11 items-center rounded-lg border border-white/15 px-8 text-sm font-medium text-c-white/80 transition-all hover:border-white/30 hover:text-c-white focus-visible:ring-2 focus-visible:ring-c-light-blue focus-visible:ring-offset-2 focus-visible:ring-offset-c-black focus-visible:outline-none"
+				class="inline-flex h-11 items-center rounded-lg border border-white/15 px-8 text-sm font-medium text-c-white/80 transition-all hover:border-white/30 hover:text-c-white focus-visible:ring-2 focus-visible:ring-c-light-blue focus-visible:ring-offset-2 focus-visible:ring-offset-c-black focus-visible:outline-none active:scale-[0.98]"
 			>
 				About Me
 			</a>

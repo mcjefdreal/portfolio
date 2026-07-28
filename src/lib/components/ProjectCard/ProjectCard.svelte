@@ -80,7 +80,7 @@
 						href={link.href}
 						target="_blank"
 						rel="noopener noreferrer"
-						class="inline-flex items-center gap-1.5 text-sm font-medium text-c-white/55 transition-colors hover:text-c-light-blue focus-visible:rounded-sm focus-visible:ring-2 focus-visible:ring-c-light-blue focus-visible:ring-offset-2 focus-visible:ring-offset-c-black focus-visible:outline-none"
+						class="inline-flex items-center gap-1.5 text-sm font-medium text-c-white/55 transition-colors hover:text-c-light-blue focus-visible:rounded-sm focus-visible:ring-2 focus-visible:ring-c-light-blue focus-visible:ring-offset-2 focus-visible:ring-offset-c-black focus-visible:outline-none active:scale-[0.98]"
 					>
 						{link.label}
 						<ExternalLink class="h-3.5 w-3.5" />

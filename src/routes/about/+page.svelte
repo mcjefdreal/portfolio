@@ -43,12 +43,12 @@
 		<div class="md:col-span-3">
 			<h1 class="text-3xl font-bold tracking-tight text-c-white sm:text-4xl">About Me</h1>
 
-			<p class="mt-6 leading-relaxed text-c-white/70">
+			<p class="mt-6 max-w-prose leading-relaxed text-pretty text-c-white/70">
 				Full-stack developer and CS student at UP Diliman. I like building tools that work and code
 				that holds up.
 			</p>
 
-			<p class="mt-6 leading-relaxed text-c-white/70">
+			<p class="mt-6 max-w-prose leading-relaxed text-pretty text-c-white/70">
 				Currently a fourth-year BS Computer Science student at University of the Philippines -
 				Diliman.
 			</p>
@@ -118,7 +118,7 @@
 						</div>
 						<span class="shrink-0 text-sm text-c-white/60">{exp.period}</span>
 					</div>
-					<p class="mt-3 text-sm leading-relaxed text-c-white/60">{exp.description}</p>
+					<p class="mt-3 text-sm leading-relaxed text-pretty text-c-white/60">{exp.description}</p>
 				</div>
 			{/each}
 		</div>
