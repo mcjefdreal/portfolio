@@ -19,7 +19,7 @@
 			role: 'Information Security Management Intern',
 			company: 'Asia United Bank',
 			period: '2026 - Present',
-			description: 'Helped created scripts and programs to streamline and automate different tasks.'
+			description: 'Helped create scripts and programs to streamline and automate different tasks.'
 		}
 	];
 
@@ -88,7 +88,7 @@
 			{@const slug = slugify(category)}
 			<h3
 				id="skills-{slug}"
-				class="mt-6 text-sm font-semibold tracking-wider text-c-white/50 uppercase"
+				class="mt-6 text-sm font-semibold tracking-wider text-c-white/55 uppercase"
 			>
 				{category}
 			</h3>
@@ -116,7 +116,7 @@
 							<h3 class="font-semibold text-c-white">{exp.role}</h3>
 							<p class="text-sm text-c-light-blue">{exp.company}</p>
 						</div>
-						<span class="shrink-0 text-sm text-c-white/40">{exp.period}</span>
+						<span class="shrink-0 text-sm text-c-white/60">{exp.period}</span>
 					</div>
 					<p class="mt-3 text-sm leading-relaxed text-c-white/60">{exp.description}</p>
 				</div>

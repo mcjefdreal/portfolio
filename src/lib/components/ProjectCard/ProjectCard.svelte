@@ -66,7 +66,7 @@
 			<div class="mt-4 flex flex-wrap gap-2">
 				{#each project.tech as tech (tech)}
 					<span
-						class="rounded-sm border border-white/10 bg-white/[0.03] px-2 py-0.5 font-mono text-xs text-c-white/70"
+						class="rounded-sm border border-white/10 bg-white/[0.03] px-1.5 py-0.5 font-mono text-sm text-c-white/70"
 						>{tech}</span
 					>
 				{/each}
@@ -80,7 +80,7 @@
 						href={link.href}
 						target="_blank"
 						rel="noopener noreferrer"
-						class="inline-flex items-center gap-1.5 text-sm font-medium text-c-white/50 transition-colors hover:text-c-light-blue"
+						class="inline-flex items-center gap-1.5 text-sm font-medium text-c-white/55 transition-colors hover:text-c-light-blue focus-visible:rounded-sm focus-visible:ring-2 focus-visible:ring-c-light-blue focus-visible:ring-offset-2 focus-visible:ring-offset-c-black focus-visible:outline-none"
 					>
 						{link.label}
 						<ExternalLink class="h-3.5 w-3.5" />

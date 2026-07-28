@@ -26,7 +26,7 @@
 					<a
 						href={resolve(href)}
 						aria-current={isActive(href) ? 'page' : undefined}
-						class="flex h-16 items-center border-b-2 border-transparent px-4 text-sm font-medium text-c-white/70 transition-colors hover:text-c-white"
+						class="flex h-16 items-center border-b-2 border-transparent px-2 text-sm font-medium text-c-white/70 transition-colors hover:text-c-white focus-visible:rounded-sm focus-visible:ring-2 focus-visible:ring-c-light-blue focus-visible:ring-offset-2 focus-visible:ring-offset-c-black focus-visible:outline-none sm:px-4"
 						class:border-b-c-light-blue={isActive(href)}
 						class:text-c-white={isActive(href)}>{label}</a
 					>

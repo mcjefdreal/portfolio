@@ -9,8 +9,13 @@
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 <div class="flex min-h-screen flex-col bg-c-black text-c-white" data-sveltekit-preload-data="hover">
+	<a
+		href="#main"
+		class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:rounded-lg focus:bg-c-light-blue focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-c-black focus:outline-none"
+		>Skip to content</a
+	>
 	<Navbar />
-	<main class="flex-1">
+	<main id="main" class="flex-1">
 		{@render children()}
 	</main>
 	<Footer />
