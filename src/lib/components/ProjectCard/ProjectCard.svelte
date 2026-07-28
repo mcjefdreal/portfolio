@@ -11,11 +11,11 @@
 		class?: string;
 	} = $props();
 
-	const projectImages = import.meta.glob<{ default: string }>('$lib/assets/projects/*', {
+	const projectImages = import.meta.glob('$lib/assets/projects/*', {
 		eager: true,
 		query: '?url',
 		import: 'default'
-	});
+	}) as Record<string, string>;
 
 	const imagesByFilename: Record<string, string> = Object.fromEntries(
 		Object.entries(projectImages).map(([path, url]) => [path.split('/').pop()!, url])

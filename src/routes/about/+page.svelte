@@ -61,7 +61,7 @@
 			>
 				<img
 					src="/profile.png"
-					alt="GitHub Picture of mcjefdreal"
+					alt="mcjefdreal"
 					width="224"
 					height="224"
 					loading="eager"
